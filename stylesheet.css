@@ -12,13 +12,15 @@ a {
 }
 
 .header{
-  height:100px;
+  padding-left:100;
+  padding-right:100;
+  margin:0 auto;
 }
 
 .header-logo{
   float:left;
   font-size:40px;
-  padding:20px;
+  padding:30px;
 }
 
 .header-contact {
@@ -26,14 +28,14 @@ a {
   padding:30px;
 }
 
-.facebook {
+.mail-form {
   float:right;
   background-color: #ffcc69;
   margin-right: 10px;
-  margin-bottom: 30px;
+  margin-bottom: px;
 }
 
-.btn {
+.btn  {
   padding: 20px 24px;
   color: white;
   display: inline-block;
@@ -43,4 +45,46 @@ a {
 
 .btn:hover {
   opacity: 1;
+}
+
+.nav{
+ border-bottom: 3px solid #7b7a7a;
+ margin-bottom:10;
+}
+.nav ul{
+ display: table;
+ margin: 0 auto;
+ padding: 0;
+ width: 80%;
+ text-align: center;
+}
+.nav ul li{
+ display: table-cell;
+ min-width: 80px;
+ border-right: 1px solid #7b7a7a;
+}
+.nav ul li:first-child{
+ border-left: 1px solid #7b7a7a;
+ width:100;
+}
+.nav ul li a{
+ display: block;
+ width: 100%;
+ padding: 10px 0;
+ text-decoration: none;
+ color: #545454;
+}
+.nav ul li a:hover{
+ background-color:#F8E750;
+}
+.nav ul li.current{
+ font-weight: bold;
+}
+.nav ul li.current a{
+ border-bottom: 5px solid #00B0F0;
+ color: #00B0F0;
+}
+
+.TOP{
+
 }
