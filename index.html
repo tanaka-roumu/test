@@ -10,57 +10,8 @@
    <link rel="stylesheet" href="sp.css" media="screen and (max-width: 500px)">
   <link rel="stylesheet" href="pc.css" media="screen and (min-width: 1000px)">
   <style type="text/css">
-#photo {
-    width: 1050px;
-    height: 250px;
-    margin: 0 auto;
-    text-align: left;
-    overflow: hidden;
-    position: relative;
-}
 
-#photo img {
-    top: 0;
-    left: 0;
-    position: absolute;
-}
-</style>
 
-<script type="text/javascript">
-jQuery(document).ready(function($) {
-    //600px以上の場合
-    if (window.matchMedia( '(min-width: 600px)' ).matches) {
-$(function(){
-    $("#sample").mouseover(function(){
-        $(this).toggleClass('pc');
-    });
-});
-    //600px以下の場合
-    } else {
-$(function(){
-    $("#sample").mouseover(function(){
-        $(this).toggleClass('smartphone');
-    });
-});
-    };
-});
-</script>
-
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script type="text/javascript">
-$(function(){
-    var setImg = '#photo';
-    var fadeSpeed = 1600;
-    var switchDelay = 5000;
-
-    $(setImg).children('img').css({opacity:'0'});
-    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
-
-    setInterval(function(){
-        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
-    },switchDelay);
-});
-</script>
 
 </head>
 <body>
@@ -88,8 +39,8 @@ $(function(){
  <div class="TOP">
   <div id="photo">
 
-<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E6%A7%98%E3%81%AE-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC-%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99-1.png" width="1050" height="250" alt="">
-<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E7%94%B0%E4%B8%AD-1.png" width="1050" height="250" alt="">
+<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E6%A7%98%E3%81%AE-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC-%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99-1.png"  alt="">
+
 　</div>
  </div>
  <div class="main">
