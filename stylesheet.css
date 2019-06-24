@@ -32,7 +32,7 @@ a {
   float:right;
   background-color: #ffcc69;
   margin-right: 10px;
-  margin-bottom: px;
+  margin-bottom:5px;
 }
 
 .btn  {
@@ -86,7 +86,7 @@ a {
 }
 
 .TOP{
-
+    width:100%
 }
 
 .p-content01__catch{
