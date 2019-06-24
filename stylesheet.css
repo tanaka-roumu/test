@@ -163,7 +163,6 @@ input,textarea{
 }
 
 .footer-list {
-  float:lef
   float: right;
 }
 
@@ -175,11 +174,17 @@ input,textarea{
   .contents-item {
     width: 50%;
   }
+  .TOP{
+    width:100%
+  }
 }
 
 /* スマートフォン向けレイアウト */
 @media (max-width: 670px) {
   .contents-item {
     width: 100%;
+  }
+  .TOP{
+    width:100%
   }
 }
