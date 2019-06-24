@@ -171,24 +171,15 @@ input,textarea{
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 499px) { 
-    /*　画面サイズ 499pxまで適用　*/
-    .content {color: #red;}
+@media (max-width: 1000px) {
+  .contents-item {
+    width: 50%;
   }
-  @media screen and (min-width: 500px) and (max-width: 999px) {
-    /*　画面サイズ 500pxから999pxまで適用　*/
-    .content {color: #green;}
-  }
-  @media screen and (min-width:1000px) {
-    /*　画面サイズ 1000px以上から適用　*/
-    .content {color: #blue;}
-  }
-text3.css
-
-@media screen and (min-width:600px){
-  /*600px以上で適用する内容*/
 }
 
-@media screen and (min-width:800px){
-  /*800px以上で適用する内容*/
+/* スマートフォン向けレイアウト */
+@media (max-width: 670px) {
+  .contents-item {
+    width: 100%;
+  }
 }
