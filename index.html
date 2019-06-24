@@ -23,7 +23,25 @@
     position: absolute;
 }
 </style>
+  
+<script>
+$(window).resize(function(){
+    var w = $(window).width();
+    var x = 800;
+    if (w <= x) {
+        $('#test').css({
+            color: 'red'
+        });
 
+        $('#test-name').removeClass('test-class')       
+    } else {
+        $('#sample').css({
+            color: 'black'
+        });
+        $('#test-name').addClass('test-class') 
+    }
+});
+</script>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script type="text/javascript">
