@@ -6,12 +6,39 @@
   <title>田中労務管理事務所</title>
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="stylesheet" media="(max-width: 480px)" href="style-480.css">
-   <link rel="stylesheet" href="sp.css" media="screen and (max-width: 500px)">
-  <link rel="stylesheet" href="pc.css" media="screen and (min-width: 1000px)">
   <style type="text/css">
+#photo {
+    width: 1050px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo img {
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+</style>
 
 
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var setImg = '#photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
 
 </head>
 <body>
@@ -20,12 +47,12 @@
      <img src="https://ot-worker.com/wp-content/uploads/2019/03/%E7%94%B0-300x58.png" alt="" />
    </div>
    <div class="header-contact">
-
+     
      <img src="https://ot-worker.com/wp-content/uploads/2019/03/%E3%80%87%E3%80%87%E3%80%87%E3%83%BC%E3%80%87%E3%80%87%E3%80%87%E3%80%87-300x58.jpg" alt="" />
      <a href="#" class="btn mail-form"><span class="fa fa-envelope"></span>メールフォームへ</a>
      </div>
-
-
+   
+   
  </div>
  <div class="nav">
 　<ul>
@@ -39,8 +66,8 @@
  <div class="TOP">
   <div id="photo">
 
-<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E6%A7%98%E3%81%AE-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC-%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99-1.png"  alt="">
-
+<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E4%B8%AD%E5%B0%8F%E4%BC%81%E6%A5%AD%E6%A7%98%E3%81%AE-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%91%E3%83%BC%E3%83%88%E3%83%8A%E3%83%BC-%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99-1.png" width="1050" height="250" alt="">
+<img src="https://ot-worker.com/wp-content/uploads/2019/03/%E7%94%B0%E4%B8%AD-1.png" width="1050" height="250" alt="">
 　</div>
  </div>
  <div class="main">
@@ -49,7 +76,7 @@
 
 私が目指す新たな社会保険労務士お客様とパートナーになることです。<br>
 お客様企業の労務管理のソリューションを、私の豊富な経験と実績を基に、戦略的かつ内面からまた側面から検証し、提案し、サポートしていきます。<br>
-企業様のニーズに応えられる、総合的なコンサルタント力で目指す企業の将来像を現実のものとします。
+企業のニーズに応えられる、総合的なコンサルタント力で目指す企業の将来像を現実のものとします。
 
 </div>
  <div class="contents">
@@ -78,23 +105,24 @@
         <p>メールアドレス（必須）</p>
         <!-- <input>要素を追加してください -->
         <input>
-
+        
         <p>お問い合わせ内容（必須）</p>
         <!-- <textarea>要素を追加してください -->
         <textarea></textarea>
-
+        
         <p>※必須項目は必ずご入力ください</p>
         <!-- <input>要素を追加してください -->
         <input class="contact-submit" type="submit" value="送信">
-
+        
       </div>
-
+   
 
     <div class="footer">
       <div class="footer-logo">田中労務管理事務所</div>
       <div class="footer-list">
-
+        
       </div>
     </div>
   </body>
 </html>
+   
